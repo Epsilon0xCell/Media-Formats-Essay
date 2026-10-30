@@ -3,6 +3,7 @@
 # Media-Formats-Essay
 Why Text, Audio and Pictures are the best forms of media?
 
+Scope note: this repo is a short opinion essay in two sections, not a research paper and not code. The first section argues that text and audio are better for general consumption (control, cleanliness, accessibility); the second argues that text plus pictures together aid learning. The closing line keeps the author's own balance: more content is not equal to better content, and each form of media has pros and cons.
 
 # Why is text and audio better for general consumption?
 
@@ -18,7 +19,7 @@ Finally, text and audio are often preferred because they are accessible to a wid
 
 Overall, while every form of media has its own strengths and weaknesses, text and audio offer unique advantages in terms of control, cleanliness, and accessibility. Whether you are a writer, producer, or consumer of media, it is worth considering the benefits of these often-overlooked forms of content.
 
-#  Why Text and Pictures for learning?:
+# Why Text and Pictures for learning?:
 Combining text and pictures is a powerful way to facilitate learning and understanding. This is because the human brain is wired to process information in multiple ways, and combining different forms of media can enhance our cognitive processing and memory retention.
 
 One of the main advantages of combining text and pictures is that it engages both the visual and verbal channels of the brain. This means that the learner is not only processing the words on the page, but also the images that accompany them. Research has shown that the brain is better able to understand and remember information when it is presented in multiple modalities (e.g. visual and verbal) rather than just one. This is because different parts of the brain are activated when processing different types of information, and when these areas work together, they can create a more comprehensive understanding of the material.
