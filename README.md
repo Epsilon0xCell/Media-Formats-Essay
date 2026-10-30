@@ -1,6 +1,6 @@
 ![Banner](banner.png)
 
-# Best-Text-Audio-Picture
+# Media-Formats-Essay
 Why Text, Audio and Pictures are the best forms of media?
 
 
