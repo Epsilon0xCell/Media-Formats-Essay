@@ -3,106 +3,178 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Media-Formats-Essay - Why Text, Audio and Pictures</title>
+<title>Media-Formats-Essay: The Essay, Typeset</title>
+<meta name="description" content="My short opinion essay on text, audio, and pictures, set in full as a journal page.">
 <!-- pages-campaign site for Epsilon0xCell/Media-Formats-Essay; source of truth: Media-Formats-Essay-Website/ on the default branch -->
-<!-- I set this as a magazine article because that is what the repo is. Summarising my own essay into bullets would defeat the point of writing it. -->
 <style>
-/* I gave the essay a wide margin and a rail on the left so a reader can see where they are without losing the thread of the argument. */
-*{box-sizing:border-box} body{margin:0;background:#fbfaf7;color:#22201c;font-family:Georgia,"Times New Roman",serif;line-height:1.75}
-.masthead{border-bottom:1px solid #22201c;padding:18px 36px;display:flex;justify-content:space-between;align-items:baseline}
-.masthead b{letter-spacing:.22em;text-transform:uppercase;font-family:Arial,sans-serif;font-size:12px}
-.masthead span{font-style:italic;font-size:14px}
-.hero-wrap{max-width:1060px;margin:0 auto;padding:36px 24px 0}
-h1{font-size:56px;line-height:1.02;font-weight:normal;margin:18px 0 14px;max-width:820px}
-.dek{font-size:21px;font-style:italic;max-width:680px;color:#4a463e}
-.hero{width:100%;display:block;margin:28px 0 6px;border:1px solid #d8d2c4}
-.byline{font-family:Arial,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
-.badges{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 6px}.badges img{height:20px}
-.layout{max-width:1060px;margin:0 auto;padding:20px 24px 70px;display:grid;grid-template-columns:190px 1fr;gap:44px}
-@media(max-width:760px){.layout{grid-template-columns:1fr} h1{font-size:38px}}
-.rail{font-family:Arial,sans-serif;font-size:13px;line-height:1.5}
-.rail h3{font-size:11px;letter-spacing:.2em;text-transform:uppercase;border-top:2px solid #22201c;padding-top:10px}
-.rail ol{padding-left:18px}.rail li{margin:10px 0}
-.rail a{color:#7a2e1d}
-article{max-width:700px;font-size:18px}
-article p{margin:0 0 20px}
-.dropcap::first-letter{font-size:74px;line-height:.82;float:left;padding:6px 10px 0 0}
-article h2{font-size:30px;line-height:1.2;margin:42px 0 16px;font-weight:normal}
-.pull{font-size:26px;line-height:1.35;font-style:italic;border-top:1px solid #22201c;border-bottom:1px solid #22201c;padding:20px 0;margin:34px 0;color:#7a2e1d}
-.scope{background:#efeadf;padding:18px 20px;font-size:16px;margin-bottom:30px}
-.chips{font-family:Arial,sans-serif}.chip{display:inline-block;border:1px solid #22201c;padding:3px 9px;font-size:12px;margin:3px 3px 3px 0}
-footer{border-top:1px solid #22201c;padding:18px 36px;font-family:Arial,sans-serif;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-a{color:#7a2e1d}
+:root{--paper:#fdfcf8;--ink:#1d1b18;--soft:#5c574e;--rule:#c9c2b2;--accent:#7c2d1e;--wash:#f3efe3}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;font-size:19px;line-height:1.72}
+.progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;z-index:20}
+.journal-head{max-width:46rem;margin:0 auto;padding:28px 22px 0;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;border-bottom:3px double var(--ink);padding-bottom:14px}
+.journal-head .name{font-variant:small-caps;letter-spacing:.06em;font-size:20px;line-height:1.2}
+.journal-head .name small{display:block;font-variant:normal;letter-spacing:0;font-size:13.5px;color:var(--soft);font-style:italic;margin-top:4px}
+.journal-head img{width:64px;height:64px;object-fit:cover;border:1px solid var(--rule)}
+.meta-line{max-width:46rem;margin:0 auto;padding:10px 22px 0;font-family:Helvetica,Arial,sans-serif;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);display:flex;gap:18px;flex-wrap:wrap}
+main{max-width:46rem;margin:0 auto;padding:10px 22px 20px}
+.title-block{padding:26px 0 8px}
+.title-block .kicker{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+h1{font-size:clamp(2rem,5.4vw,3.15rem);line-height:1.13;font-weight:600;margin:0 0 16px;letter-spacing:-.01em}
+.standfirst{font-size:20.5px;line-height:1.55;color:#33302a;margin:0 0 18px;max-width:38rem}
+.byline{font-family:Helvetica,Arial,sans-serif;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:9px 0;display:flex;gap:20px;flex-wrap:wrap}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 4px}
+.badges img{height:20px}
+figure{margin:30px 0}
+figure img{width:100%;display:block;border:1px solid var(--rule);background:#fff}
+figure.frontispiece img{border-color:var(--ink)}
+figcaption{font-size:14.5px;line-height:1.55;color:var(--soft);font-style:italic;padding-top:9px;border-top:1px solid var(--rule);margin-top:9px}
+figcaption b{font-style:normal;font-variant:small-caps;letter-spacing:.04em;color:var(--ink)}
+.editors-note{background:var(--wash);border-left:3px solid var(--accent);padding:18px 20px;margin:28px 0 6px}
+.editors-note .label{font-family:Helvetica,Arial,sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.editors-note p{margin:0;font-size:17.5px;line-height:1.65}
+.note-after{font-size:15.5px;color:var(--soft);font-style:italic}
+section{margin-top:8px}
+.sec-head{display:flex;gap:16px;align-items:baseline;margin:46px 0 18px;border-bottom:1px solid var(--ink);padding-bottom:10px}
+.sec-num{font-size:30px;color:var(--accent);font-style:italic;flex:none}
+.sec-head h2{font-size:27px;line-height:1.25;font-weight:600;margin:0}
+article p{margin:0 0 20px;text-align:left;hyphens:none}
+article p.lede::first-letter{font-size:3.4em;float:left;line-height:.82;padding:5px 10px 0 0;color:var(--accent)}
+.closing{margin:52px 0 10px;border-top:3px double var(--ink);padding-top:22px}
+.closing .label{font-family:Helvetica,Arial,sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+.closing blockquote{margin:0;font-size:25px;line-height:1.45;font-style:italic}
+.closing blockquote p{margin:0}
+.afterword{font-size:16.5px;color:#33302a}
+.plates-note{font-size:15.5px;color:var(--soft);border-top:1px solid var(--rule);padding-top:14px;margin-top:36px}
+.colophon{border-top:3px double var(--ink);margin-top:44px;padding:18px 0 8px;font-size:15.5px;color:var(--soft)}
+.colophon p{margin:0 0 8px}
+footer{max-width:46rem;margin:0 auto;padding:0 22px 34px;font-family:Helvetica,Arial,sans-serif;font-size:13px;color:var(--soft);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:var(--accent)}
+a{color:var(--accent)}
+.js .reveal{opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+.progress{display:none}
+.js .reveal{opacity:1;transform:none;transition:none}
+}
+@media(max-width:560px){body{font-size:18px}.journal-head img{width:48px;height:48px}.closing blockquote{font-size:22px}}
 </style>
 </head>
 <body>
-<div class="masthead"><b>An Essay, Not a Paper</b><span>Text, audio, and pictures</span></div>
-<div class="hero-wrap">
-<h1>Why Text, Audio and Pictures are the best forms of media?</h1>
-<p class="dek">A short opinion essay in two sections, plus the closing line where I land.</p>
-<img class="hero" src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/banner.png" alt="Media-Formats-Essay banner">
-<div class="byline"><span>By Epsilon0xCell</span><span>Repo: Media-Formats-Essay</span><span>Two sections and a conclusion</span></div>
-<div class="badges">
-<img src="https://img.shields.io/github/stars/Epsilon0xCell/Media-Formats-Essay?style=flat-square&color=7a2e1d" alt="Stars">
-<img src="https://img.shields.io/github/forks/Epsilon0xCell/Media-Formats-Essay?style=flat-square&color=7a2e1d" alt="Forks">
-<img src="https://img.shields.io/github/last-commit/Epsilon0xCell/Media-Formats-Essay?style=flat-square&color=7a2e1d" alt="Last commit">
-<img src="https://img.shields.io/github/languages/top/Epsilon0xCell/Media-Formats-Essay?style=flat-square&color=7a2e1d" alt="Top language">
-<img src="https://img.shields.io/github/repo-size/Epsilon0xCell/Media-Formats-Essay?style=flat-square&color=7a2e1d" alt="Repo size">
-<img src="https://img.shields.io/github/license/Epsilon0xCell/Media-Formats-Essay?style=flat-square&color=7a2e1d" alt="License">
-</div>
-</div>
-
-<div class="layout">
-<aside class="rail">
-<h3>Contents</h3>
-<ol>
-<li><a href="#what">What this is</a></li>
-<li><a href="#consumption">Why text and audio are better for general consumption</a></li>
-<li><a href="#learning">Why text and pictures for learning</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ol>
-<h3>About this repo</h3>
-<p>No code lives here. The README is the essay. That is the whole repo, and I am fine with that.</p>
-<p class="chips"><span class="chip">Opinion essay</span><span class="chip">Text</span><span class="chip">Audio</span><span class="chip">Pictures</span><span class="chip">Markdown</span></p>
-<p><a href="https://github.com/Epsilon0xCell/Media-Formats-Essay">The repo</a><br><a href="https://github.com/Epsilon0xCell">My profile</a></p>
-</aside>
-
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="journal-head">
+<div class="name">Media-Formats-Essay<small>I set my own essay as the site, because a summary would argue against the essay itself.</small></div>
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/logo.png" alt="Media-Formats-Essay logo, a line chart over three panels">
+</header>
+<div class="meta-line"><span>Opinion essay</span><span>Two sections</span><span>One conclusion</span><span>By Epsilon0xCell</span></div>
+<main>
 <article>
-<section id="what">
-<div class="scope"><strong>What this is, in my words.</strong> I wrote this as a short opinion piece, not a research paper. The first section is about general consumption: control, cleanliness, and accessibility. The second is about learning, where I argue text plus pictures together work better. I kept the closing line as my own balance, because I do not think one form wins at everything.</div>
-<p>I am not claiming every other form is bad. Video, images, text, and audio all have a place. My point is narrower than that, and the essay below says it in full.</p>
-</section>
-
-<section id="consumption">
-<h2>Why is text and audio better for general consumption?</h2>
-<p class="dropcap">When it comes to media, there are various forms that one can consume - video, images, text, audio, and more. Each has its own strengths and weaknesses, but there are many reasons why text and audio are often preferred over other forms of media.</p>
+<div class="title-block">
+<p class="kicker">The essay, typeset in full</p>
+<h1>Why Text, Audio and Pictures are the best forms of media?</h1>
+<p class="standfirst">I argue two things here. For general consumption, I put text and audio first. For learning, I put text and pictures together. The rest of this page is the essay itself, word for word.</p>
+<div class="byline"><span>Words by Epsilon0xCell</span><span>Source: README.md in the repo</span><span>Set as a journal article</span></div>
+<div class="badges">
+<img src="https://img.shields.io/github/stars/Epsilon0xCell/Media-Formats-Essay?style=flat-square" alt="GitHub stars">
+<img src="https://img.shields.io/github/forks/Epsilon0xCell/Media-Formats-Essay?style=flat-square" alt="GitHub forks">
+<img src="https://img.shields.io/github/last-commit/Epsilon0xCell/Media-Formats-Essay?style=flat-square" alt="Last commit">
+<img src="https://img.shields.io/github/languages/top/Epsilon0xCell/Media-Formats-Essay?style=flat-square" alt="Top language">
+<img src="https://img.shields.io/github/repo-size/Epsilon0xCell/Media-Formats-Essay?style=flat-square" alt="Repository size">
+<img src="https://img.shields.io/github/license/Epsilon0xCell/Media-Formats-Essay?style=flat-square" alt="License, MIT">
+</div>
+</div>
+<figure class="frontispiece">
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/banner.png" alt="Media-Formats-Essay banner with a line chart and the counts Markdown, 2 files, 32 lines, 3 commits">
+<figcaption><b>Frontispiece.</b> My banner for the repo. It carries the counts from the snapshot the drawings were made from: Markdown, 2 files, 32 lines, 3 commits.</figcaption>
+</figure>
+<aside class="editors-note reveal">
+<p class="label">Editor's note, the scope note as I wrote it</p>
+<p>Scope note: this repo is a short opinion essay in two sections, not a research paper and not code. The first section argues that text and audio are better for general consumption (control, cleanliness, accessibility); the second argues that text plus pictures together aid learning. The closing line keeps the author's own balance: more content is not equal to better content, and each form of media has pros and cons.</p>
+</aside>
+<p class="note-after">I put that note first on purpose. If you came here expecting a study or a program, the note saves you the scroll.</p>
+<figure class="reveal">
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/Media-Formats-Essay-Visuals/architecture.png" alt="Hand drawn sheet showing README.md above LICENSE, titled how it is put together">
+<figcaption><b>Plate I.</b> How the repo is put together, drawn by hand on notebook paper. README.md, at 32 lines, sits above LICENSE. With an essay this short, that really is the whole structure.</figcaption>
+</figure>
+<section class="reveal" aria-labelledby="s1h">
+<div class="sec-head"><span class="sec-num">1</span><h2 id="s1h">Why is text and audio better for general consumption?</h2></div>
+<p class="lede">When it comes to media, there are various forms that one can consume - video, images, text, audio, and more. Each has its own strengths and weaknesses, but there are many reasons why text and audio are often preferred over other forms of media.</p>
 <p>One of the main advantages of text and audio is the level of control that the writer and producer have over the content. With text, the writer can carefully craft each sentence to convey exactly the message they intend. They can also use formatting, such as bold or italicized text, to add emphasis or draw attention to key points. Additionally, with text, the reader has complete control over the pace at which they consume the information. They can read at their own speed, go back and reread if necessary, and take breaks as needed.</p>
 <p>Similarly, with audio, the producer has control over every aspect of the content. They can carefully select the music or sound effects that best fit the message they are trying to convey, and they can edit and manipulate the audio to ensure that it is clean and clear. Additionally, with audio, the listener has complete control over when and where they listen. They can pause, rewind, or fast forward as needed, and they can listen on their own schedule, without having to worry about visual distractions or interruptions.</p>
-<div class="pull">The reader has complete control over the pace at which they consume the information.</div>
+<figure>
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/Media-Formats-Essay-Visuals/flowchart.png" alt="Hand drawn flowchart starting at README.md and ending with stop clean, or say why not">
+<figcaption><b>Plate II.</b> The run, step by step, as I drew it: start at README.md, read the files in the order they sit, then stop clean or say why not. For an essay, reading is the run.</figcaption>
+</figure>
 <p>Another advantage of text and audio is the cleanliness of the media. With text, there are no distracting visuals or advertisements to take away from the message being conveyed. The reader can focus solely on the words on the page, without any other distractions. Similarly, with audio, there are no visual distractions, and the listener can focus solely on the sounds being played. This can be particularly beneficial when trying to convey complex or emotional messages, as the lack of distractions can help the audience fully immerse themselves in the content.</p>
 <p>Finally, text and audio are often preferred because they are accessible to a wide range of audiences. Unlike video, which may require a certain level of visual acuity or technical knowledge, or images, which may not convey enough information on their own, text and audio can be consumed by anyone with basic reading or listening skills. Additionally, text and audio can be easily translated into other languages or made accessible to those with disabilities, further increasing their accessibility.</p>
 <p>Overall, while every form of media has its own strengths and weaknesses, text and audio offer unique advantages in terms of control, cleanliness, and accessibility. Whether you are a writer, producer, or consumer of media, it is worth considering the benefits of these often-overlooked forms of content.</p>
 </section>
-
-<section id="learning">
-<h2>Why text and pictures for learning?</h2>
-<!-- I left the learning section whole. Cutting it down would have removed the reasons, and the reasons are the essay. -->
-<p>Combining text and pictures is a strong way to facilitate learning and understanding. This is because the human brain is wired to process information in multiple ways, and combining different forms of media can enhance our cognitive processing and memory retention.</p>
-<p>One of the main advantages of combining text and pictures is that it engages both the visual and verbal channels of the brain. This means that the learner is not only processing the words on the page, but also the images that accompany them. Research has shown that the brain is better able to understand and remember information when it is presented in multiple modalities (e.g. visual and verbal) rather than just one. This is because different parts of the brain are activated when processing different types of information, and when these areas work together, they can create a more full understanding of the material.</p>
+<figure class="reveal">
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/Media-Formats-Essay-Visuals/data-flow.png" alt="Hand drawn data flow from files on disk through README.md to result out">
+<figcaption><b>Plate III.</b> Data flow in one direction: files on disk, README.md, the main pass, result out. I drew only what happens. Nothing else is promised by the sheet, or by me.</figcaption>
+</figure>
+<section class="reveal" aria-labelledby="s2h">
+<div class="sec-head"><span class="sec-num">2</span><h2 id="s2h">Why text and pictures for learning?</h2></div>
+<p>Combining text and pictures is a powerful way to facilitate learning and understanding. This is because the human brain is wired to process information in multiple ways, and combining different forms of media can enhance our cognitive processing and memory retention.</p>
+<p>One of the main advantages of combining text and pictures is that it engages both the visual and verbal channels of the brain. This means that the learner is not only processing the words on the page, but also the images that accompany them. Research has shown that the brain is better able to understand and remember information when it is presented in multiple modalities (e.g. visual and verbal) rather than just one. This is because different parts of the brain are activated when processing different types of information, and when these areas work together, they can create a more comprehensive understanding of the material.</p>
+<figure>
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/Media-Formats-Essay-Visuals/product-map.png" alt="Hand drawn product map with what it is, what goes in, what comes out, and where it stops">
+<figcaption><b>Plate IV.</b> What this project is for, in four boxes. I care most about the last one, where it stops: no service behind it, no account, no upload.</figcaption>
+</figure>
 <p>Additionally, combining text and pictures allows for a greater degree of flexibility in the learning process. While videos and auditory learning rely solely on the pace and structure of the material presented, combining text and pictures allows learners to engage with the content in a way that is more individualized. For example, learners can skim over the text and focus on the images, or vice versa, depending on their learning style and preferences. This can help learners stay engaged with the material and maintain their attention for longer periods of time.</p>
-<div class="pull">Text and audio offer unique advantages in terms of control, cleanliness, and accessibility.</div>
 <p>Moreover, combining text and pictures can also enhance problem-solving and critical thinking skills. This is because visual aids can help learners to see connections between concepts, and to make sense of complex information. Pictures can also provide learners with a visual reference point for abstract concepts, making them easier to understand and remember. When learners are able to see and connect the dots between different pieces of information, they are better equipped to make sense of the material and to apply it in new contexts.</p>
 <p>Finally, combining text and pictures can be a more efficient and cost-effective way of learning. While videos and auditory learning may require more resources and production time, combining text and pictures can be done with basic software and tools, making it accessible to a wider range of learners and educators. This can be particularly beneficial for those who have limited access to technology or who are in resource-poor environments.</p>
-<p>In summary, combining text and pictures is a strong way to facilitate learning and understanding. By engaging multiple modalities, providing flexibility in the learning process, enhancing problem-solving skills, and being cost-effective, this approach can be more effective than videos and auditory learning for many learners.</p>
+<p>In summary, combining text and pictures is a powerful way to facilitate learning and understanding. By engaging multiple modalities, providing flexibility in the learning process, enhancing problem-solving skills, and being cost-effective, this approach can be more effective than videos and auditory learning for many learners.</p>
 </section>
-
-<section id="conclusion">
-<h2>Conclusion</h2>
-<p>Generally more content is not equal to better content and there are pros and cons to each form of media.</p>
-<p>That line is where I stop. It is the balance I wanted in the essay from the start.</p>
+<figure class="reveal">
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/Media-Formats-Essay-Visuals/schematic.png" alt="Hand drawn schematic of README.md and LICENSE as parts on a base plate">
+<figcaption><b>Plate V.</b> A schematic of the apparatus, with a parts list of two: README.md first, LICENSE second. Span, as drawn: 2 files, 32 lines counted.</figcaption>
+</figure>
+<section class="closing reveal" aria-labelledby="conch">
+<p class="label" id="conch">Conclusion</p>
+<blockquote><p>Generally more content is not equal to better content and there are pros and cons to each form of media.</p></blockquote>
 </section>
-</article>
+<p class="afterword">That is the end of the essay. I did not add a paragraph after it, because the balance in that line is the point I wanted to leave standing.</p>
+<figure class="reveal">
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/Media-Formats-Essay-Visuals/statistics.png" alt="Hand drawn counts sheet showing Markdown 32, 2 files, and 3 commits">
+<figcaption><b>Plate VI.</b> The repo in numbers, counted on 2026-10-30 from a local snapshot: Markdown 32, 2 files in the tree, 3 commits, no test files by name.</figcaption>
+</figure>
+<p class="plates-note">A note on the plates, from me: VISUAL.md in the repo describes five sheets, but the folder holds six PNG sheets. I show all six here, schematic included, rather than drop one to match the count in the note.</p>
+<div class="colophon">
+<p>Colophon: I set this page in a serif face at a reading measure, ink on paper, because the essay argues for text and the page should behave like text. The essay above is my README, reproduced in full. The drawings are my notebook sheets from the Visuals folder.</p>
+<p>Read the source or browse the files: <a href="https://github.com/Epsilon0xCell/Media-Formats-Essay">Epsilon0xCell/Media-Formats-Essay</a>.</p>
 </div>
-<footer><span>Built by Epsilon0xCell</span><span>Set in Georgia because this one is meant to be read, not scanned.</span></footer>
+</article>
+</main>
+<footer>
+<span>Built by Epsilon0xCell</span>
+<span><a href="https://github.com/Epsilon0xCell/Media-Formats-Essay">Repository</a> &middot; <a href="https://github.com/Epsilon0xCell">github.com/Epsilon0xCell</a></span>
+</footer>
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var bar=document.getElementById('progress');
+  var ticking=false;
+  function update(){
+    ticking=false;
+    var h=document.documentElement;
+    var max=h.scrollHeight-h.clientHeight;
+    var p=max>0?(h.scrollTop||document.body.scrollTop)/max:0;
+    if(p<0)p=0; if(p>1)p=1;
+    bar.style.transform='scaleX('+p+')';
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update);}},{passive:true});
+  update();
+  var items=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{threshold:0.08});
+    items.forEach(function(el){io.observe(el);});
+  } else {
+    items.forEach(function(el){el.classList.add('in');});
+  }
+})();
+</script>
 </body>
 </html>
