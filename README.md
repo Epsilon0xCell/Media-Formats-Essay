@@ -1,9 +1,19 @@
-![Banner](banner.png)
+![Intro: the press room at the held second before the next impression](intro-banner.png)
+
 
 # Media-Formats-Essay
+
+![Banner](banner.png)
+
+![Scene](scene.svg)
+
+> **AUTHOR'S NOTE** · This is an opinion essay, not research and not code. What is printed here has to earn its place on the page.
 Why Text, Audio and Pictures are the best forms of media?
 
 Scope note: this repo is a short opinion essay in two sections, not a research paper and not code. The first section argues that text and audio are better for general consumption (control, cleanliness, accessibility); the second argues that text plus pictures together aid learning. The closing line keeps the author's own balance: more content is not equal to better content, and each form of media has pros and cons.
+
+
+![Separator](sep-heavy.svg)
 
 ## Why is text and audio better for general consumption?
 
@@ -19,6 +29,9 @@ Finally, text and audio are often preferred because they are accessible to a wid
 
 Overall, while every form of media has its own strengths and weaknesses, text and audio offer unique advantages in terms of control, cleanliness, and accessibility. Whether you are a writer, producer, or consumer of media, it is worth considering the benefits of these often-overlooked forms of content.
 
+
+![Separator](sep-light.svg)
+
 ## Why text and pictures for learning?
 Combining text and pictures is a strong way to facilitate learning and understanding. This is because the human brain is wired to process information in multiple ways, and combining different forms of media can enhance our cognitive processing and memory retention.
 
@@ -31,6 +44,9 @@ Moreover, combining text and pictures can also enhance problem-solving and criti
 Finally, combining text and pictures can be a more efficient and cost-effective way of learning. While videos and auditory learning may require more resources and production time, combining text and pictures can be done with basic software and tools, making it accessible to a wider range of learners and educators. This can be particularly beneficial for those who have limited access to technology or who are in resource-poor environments.
 
 In summary, combining text and pictures is a strong way to facilitate learning and understanding. By engaging multiple modalities, providing flexibility in the learning process, enhancing problem-solving skills, and being cost-effective, this approach can be more effective than videos and auditory learning for many learners.
+
+
+![Separator](sep-light.svg)
 
 ## Conclusion
 

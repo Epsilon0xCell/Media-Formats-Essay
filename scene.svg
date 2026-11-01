@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="The print shop, animated: press cycle, drying line, growing stack">
+<rect width="1200" height="340" fill="#2e2a24"/>
+<line x1="0" y1="58" x2="1200" y2="44" stroke="#141210" stroke-width="4"/>
+<g fill="#e6e0cd">
+<g><rect x="60" y="52" width="110" height="140"/><animateTransform attributeName="transform" type="rotate" values="-1.4 115 52;1.4 115 52;-1.4 115 52" dur="7s" repeatCount="indefinite"/></g>
+<g><rect x="200" y="50" width="110" height="140"/><animateTransform attributeName="transform" type="rotate" values="1.2 255 50;-1.2 255 50;1.2 255 50" dur="9s" repeatCount="indefinite"/></g>
+<g><rect x="340" y="48" width="110" height="140"/><animateTransform attributeName="transform" type="rotate" values="-1 395 48;1 395 48;-1 395 48" dur="8s" repeatCount="indefinite"/></g>
+<g><rect x="480" y="47" width="110" height="140"><animate attributeName="fill" values="#e6e0cd;#e6e0cd;#cfc8b2" keyTimes="0;0.92;1" dur="20s" repeatCount="indefinite"/></rect></g>
+<g><rect x="620" y="46" width="110" height="140"/><animateTransform attributeName="transform" type="rotate" values="1.3 675 46;-1.3 675 46;1.3 675 46" dur="10s" repeatCount="indefinite"/></g>
+</g>
+<g fill="#a49c88"><rect x="78" y="76" width="74" height="10"/><rect x="78" y="100" width="74" height="10"/><rect x="218" y="74" width="74" height="10"/><rect x="218" y="98" width="74" height="10"/><rect x="358" y="72" width="74" height="10"/><rect x="498" y="71" width="74" height="10"/><rect x="638" y="70" width="74" height="10"/></g>
+<polygon points="120,330 165,150 215,120 265,150 310,330 262,330 238,215 192,215 168,330" fill="#141210"/>
+<ellipse cx="215" cy="112" rx="62" ry="18" fill="#0a0908"/>
+<g><circle cx="215" cy="292" r="40" fill="none" stroke="#0f0d0b" stroke-width="9"/><g stroke="#5a554a" stroke-width="5"><line x1="215" y1="292" x2="215" y2="256"/><line x1="215" y1="292" x2="250" y2="310"/><line x1="215" y1="292" x2="180" y2="310"/></g><animateTransform attributeName="transform" type="rotate" values="0 215 292;360 215 292" dur="6s" repeatCount="indefinite"/></g>
+<g><polygon points="150,205 285,198 312,272 172,282" fill="#1c1a17"/><polygon points="168,216 272,210 292,264 184,270" fill="#efe9d6"><animate attributeName="fill" values="#efe9d6;#d9d2ba;#efe9d6" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/></polygon><animateTransform attributeName="transform" type="rotate" values="0 215 205;-4 215 205;0 215 205" dur="6s" repeatCount="indefinite"/></g>
+<rect x="430" y="252" width="330" height="66" fill="#6e675c"/>
+<rect x="452" y="266" width="180" height="38" fill="#24211d"/>
+<g fill="#8f8a7c"><rect x="462" y="274" width="0" height="22"><animate attributeName="width" values="0;32;64;96;128;160;160;0" keyTimes="0;0.14;0.28;0.42;0.56;0.7;0.92;1" dur="6s" repeatCount="indefinite"/></rect></g>
+<line x1="452" y1="240" x2="600" y2="230" stroke="#b03024" stroke-width="7"/>
+<g fill="#efe9d6" stroke="#a49c88"><rect x="880" y="292" width="150" height="10"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1;0.2;1" dur="48s" repeatCount="indefinite"/></rect><rect x="880" y="280" width="150" height="10"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.3;0.4;1" dur="48s" repeatCount="indefinite"/></rect><rect x="880" y="268" width="150" height="10"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.6;1" dur="48s" repeatCount="indefinite"/></rect><rect x="880" y="256" width="150" height="10"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.7;0.8;1" dur="48s" repeatCount="indefinite"/></rect></g>
+<rect y="322" width="1200" height="18" fill="#57432c"/>
+</svg>
