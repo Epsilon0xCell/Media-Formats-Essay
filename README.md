@@ -1,9 +1,11 @@
-![Intro: the press room at the held second before the next impression](intro-banner.png)
+![Intro: the iron press mid impression, a cream sheet lifting off the platen with its fresh dark printed panel, the brass speaking horn soft behind it and the framed picture panel on the wall to the left](intro-banner.png)
 
 
 # Media-Formats-Essay
 
-![Banner](banner.png)
+<p align="center"><img src="logo.png" alt="Media-Formats-Essay logo: a flat dark emblem of an iron printing press seen from the front, a cream sheet on its platen, a sepia ink ball resting on the sheet's edge and one red ribbon tied to the press arm, on a cream ground" width="200"></p>
+
+![Banner: a Victorian press room in iron black and sepia, a tall stack of printed sheets on the left, a brass speaking horn on its stand at the center, a large framed picture panel on the right wall, all three under the same window light](banner.png)
 
 ![Scene](scene.svg)
 
