@@ -3,45 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Media-Formats-Essay: a sheet off the village press</title>
+<title>Media-Formats-Essay: the press room, three media weighed</title>
 <meta name="description" content="A short opinion essay in two parts: text and audio for general use, text with pictures for learning.">
 <style>
-@font-face{font-family:'Bitter';src:url('fonts/Bitter.ttf') format('truetype')}
+@font-face{font-family:'Germania One';src:url('fonts/GermaniaOne-Regular.ttf') format('truetype')}
+@font-face{font-family:'EB Garamond';src:url('fonts/EBGaramond-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'EB Garamond';src:url('fonts/EBGaramond-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'EB Garamond';src:url('fonts/EBGaramond-Bold.ttf') format('truetype');font-weight:700}
 *{box-sizing:border-box}
-body{margin:0;background:#ece7da;color:#1a1712;font-family:'Bitter',Georgia,serif;line-height:1.85;font-size:18px}
-.mast{background:#141210;color:#ece7da;padding:34px 22px 22px;text-align:center}
-.mast h1{margin:0;font-size:2.3rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800}
-.mast p{margin:6px 0 0;color:#c9bfa8;letter-spacing:.08em}
-.kraftrule{height:6px;background:#b08d57}
+body{margin:0;background:#efe8d8;color:#211a12;font-family:'EB Garamond',Georgia,serif;line-height:1.8;font-size:19px}
+.mast{background:#171310;color:#efe8d8;padding:34px 22px 22px;text-align:center}
+.mast h1{font-family:'Germania One',serif;margin:0;font-size:2.5rem;letter-spacing:.1em;text-transform:uppercase;font-weight:400}
+.mast p{margin:6px 0 0;color:#c9b98f;letter-spacing:.06em;font-style:italic}
+.kraftrule{height:6px;background:#a02c1e}
 main{max-width:820px;margin:0 auto;padding:26px 22px 10px}
-img.hero{width:100%;height:auto;border:2px solid #141210}
-h2{letter-spacing:.1em;text-transform:uppercase;font-size:1.3rem;margin:0 0 10px}
-.rule{border:0;border-top:4px solid #141210;position:relative;margin:44px 0 30px}
-.rule::after{content:'';position:absolute;left:50%;top:-9px;width:13px;height:13px;margin-left:-7px;background:#b03024;transform:rotate(45deg)}
-.rule.minor{border-top:2px solid #141210;width:180px;margin:34px auto}
+img.hero{width:100%;height:auto;border:2px solid #171310}
+h2{font-family:'Germania One',serif;letter-spacing:.08em;text-transform:uppercase;font-size:1.45rem;font-weight:400;margin:0 0 10px}
+.rule{border:0;border-top:4px solid #171310;position:relative;margin:44px 0 30px}
+.rule::after{content:'';position:absolute;left:50%;top:-9px;width:13px;height:13px;margin-left:-7px;background:#a02c1e;transform:rotate(45deg)}
+.rule.minor{border-top:2px solid #171310;width:180px;margin:34px auto}
 .rule.minor::after{display:none}
-.slip{display:inline-block;background:#d9bd8a;color:#141210;border:1px solid #141210;padding:.55rem 1.1rem;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;font-size:.85rem;margin:.25rem}
-.slip:hover{background:#c9ab72}
+.slip{display:inline-block;background:#e3d3a4;color:#171310;border:1px solid #171310;padding:.5rem 1.05rem;text-transform:uppercase;letter-spacing:.09em;text-decoration:none;font-size:.82rem;margin:.25rem;font-family:'Germania One',serif}
+.slip:hover{background:#d3bf85}
 .slip:active{transform:translateY(1px)}
-a{color:#7c2418;text-decoration:underline wavy #b03024 1px;text-underline-offset:4px}
+a{color:#7c2418;text-decoration:underline wavy #a02c1e 1px;text-underline-offset:4px}
 a:hover{text-decoration-thickness:2px}
 a:visited{color:#6e6a60}
-.tray{background:#e2ddd0;border-left:10px solid #8f8a7c;padding:16px 20px;margin:18px 0}
-.tray h3{margin:0 0 6px;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase}
-.quote{background:#d9bd8a;border-left:6px solid #b03024;padding:16px 20px;margin:22px 0}
-.spec{background:#f4f0e4;border:1px solid #b9b2a0;padding:16px 20px;margin:14px 0}
-.closing{text-align:center;padding:34px 30px;background:#f4f0e4;border:1px solid #141210;margin:26px 0}
-.closing p.big{font-size:1.45rem;line-height:1.6;margin:8px 0}
+.tray{background:#e6dfcd;border-left:10px solid #8a7a52;padding:16px 20px;margin:18px 0}
+.tray h3{margin:0 0 6px;font-size:.95rem;letter-spacing:.13em;text-transform:uppercase;font-family:'Germania One',serif;font-weight:400}
+.quote{background:#e3d3a4;border-left:6px solid #a02c1e;padding:16px 20px;margin:22px 0}
+.spec{background:#f7f2e4;border:1px solid #b3a888;padding:16px 20px;margin:14px 0}
+.spec h3{font-family:'Germania One',serif;font-weight:400}
+.closing{text-align:center;padding:34px 30px;background:#f7f2e4;border:1px solid #171310;margin:26px 0}
+.closing p.big{font-size:1.5rem;line-height:1.6;margin:8px 0}
 .badges img{height:20px}
-footer{max-width:820px;margin:0 auto;padding:18px 22px 40px;color:#5c574e}
-.imprint{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;text-align:center;border-top:3px double #141210;padding-top:14px}
+footer{max-width:820px;margin:0 auto;padding:18px 22px 40px;color:#5c5344}
+.imprint{text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;text-align:center;border-top:3px double #171310;padding-top:14px;font-family:'Germania One',serif}
 </style>
 </head>
 <body>
 <header class="mast"><h1>Media-Formats-Essay</h1><p>Why text, audio and pictures are the best forms of media?</p></header>
 <div class="kraftrule"></div>
 <main>
-<img class="hero" src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/banner.png" alt="The village print shop with the essay title drying on the line">
+<img class="hero" src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/banner.png" alt="A Victorian press room in iron black and sepia: a tall stack of printed sheets on the left, a brass speaking horn on its stand at the center, and a large framed picture panel on the right wall, all under the same window light">
 <p><a class="slip" href="https://github.com/Epsilon0xCell/Media-Formats-Essay">The repo on GitHub</a> <a class="slip" href="#general">For General Use</a> <a class="slip" href="#learning">For Learning</a></p>
 <div class="badges">
 <img src="https://img.shields.io/github/stars/Epsilon0xCell/Media-Formats-Essay?style=flat-square" alt="GitHub stars">
@@ -62,7 +66,7 @@ footer{max-width:820px;margin:0 auto;padding:18px 22px 40px;color:#5c574e}
 <p>Overall, while every form of media has its own strengths and weaknesses, text and audio offer unique advantages in terms of control, cleanliness, and accessibility. Whether you are a writer, producer, or consumer of media, it is worth considering the benefits of these often-overlooked forms of content.</p>
 </section>
 <div class="spec"><h3 style="margin-top:0;letter-spacing:.12em;text-transform:uppercase;font-size:.95rem">Specimen: words alone</h3><p>One of the main advantages of text and audio is the level of control that the writer and producer have over the content. With text, the writer can carefully craft each sentence to convey exactly the message they intend. They can also use formatting, such as bold or italicized text, to add emphasis or draw attention to key points. Additionally, with text, the reader has complete control over the pace at which they consume the information. They can read at their own speed, go back and reread if necessary, and take breaks as needed.</p></div>
-<div class="spec"><h3 style="margin-top:0;letter-spacing:.12em;text-transform:uppercase;font-size:.95rem">Specimen: the same, with a picture</h3><p>One of the main advantages of text and audio is the level of control that the writer and producer have over the content. With text, the writer can carefully craft each sentence to convey exactly the message they intend. They can also use formatting, such as bold or italicized text, to add emphasis or draw attention to key points. Additionally, with text, the reader has complete control over the pace at which they consume the information. They can read at their own speed, go back and reread if necessary, and take breaks as needed.</p><img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/banner.png" alt="The print shop where this sheet was set" style="width:100%;height:auto"></div>
+<div class="spec"><h3 style="margin-top:0;letter-spacing:.12em;text-transform:uppercase;font-size:.95rem">Specimen: the same, with a picture</h3><p>One of the main advantages of text and audio is the level of control that the writer and producer have over the content. With text, the writer can carefully craft each sentence to convey exactly the message they intend. They can also use formatting, such as bold or italicized text, to add emphasis or draw attention to key points. Additionally, with text, the reader has complete control over the pace at which they consume the information. They can read at their own speed, go back and reread if necessary, and take breaks as needed.</p><img src="https://raw.githubusercontent.com/Epsilon0xCell/Media-Formats-Essay/main/banner.png" alt="The iron press mid impression, a cream sheet lifting off the platen with its fresh dark printed panel" style="width:100%;height:auto"></div>
 <hr class="rule">
 <section id="learning"><h2>For Learning</h2>
 <p>Combining text and pictures is a strong way to facilitate learning and understanding. This is because the human brain is wired to process information in multiple ways, and combining different forms of media can enhance our cognitive processing and memory retention.</p>
@@ -76,6 +80,6 @@ footer{max-width:820px;margin:0 auto;padding:18px 22px 40px;color:#5c574e}
 <section class="closing"><h2>More Is Not Better</h2><p class="big">Generally more content is not equal to better content and there are pros and cons to each form of media.</p></section>
 <div class="tray"><h3>The plates</h3><p>The repo holds a folder of hand drawn sheets, <a href="https://github.com/Epsilon0xCell/Media-Formats-Essay/tree/main/Media-Formats-Essay-Visuals">Media-Formats-Essay-Visuals</a>: architecture, flowchart, data flow, product map, statistics, and schematic.</p></div>
 </main>
-<footer><p class="imprint">Printed at the village notice press, set in Bitter</p><p>Licence: MIT (see the LICENSE file in the repo). Fonts: Bitter, SIL Open Font License 1.1, license text beside the font file on this site.</p></footer>
+<footer><p class="imprint">Printed at the iron press, set in Germania One and EB Garamond</p><p>Licence: MIT (see the LICENSE file in the repo). Fonts: Germania One and EB Garamond, SIL Open Font License 1.1, self-hosted, license texts beside the font files on this site.</p></footer>
 </body>
 </html>
